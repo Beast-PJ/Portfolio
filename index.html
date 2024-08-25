@@ -1,43 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio Website</title>
 </head>
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#home">My<span>Portfolio</span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <a href="#" class="logo">Beast PJ</a>
 
-    <!-- Header Section -->
-    <header class="hero">
-        <div class="hero-overlay">
-            <h1>Welcome to <span>My Portfolio</span></h1>
-            <p>Creative Web Developer & Designer</p>
-            <button onclick="scrollToSection('about')">Learn More</button>
-        </div>
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
+        </nav>
     </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="img/main1.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Beast PJ</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
 
-    <!-- Other sections go here... -->
+    <section class="services" id="services">
+        <h2>My Services</h2>
+        <p class="services-description">Offering a variety of services to help bring your ideas to life.</p>
+        <div class="services-container">
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Building responsive and interactive websites tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa-solid fa-paintbrush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Creating user-friendly interfaces and experiences for your applications.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Producing high-quality video content for marketing and personal projects.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <h3>Content Writing</h3>
+                <p>Crafting compelling and engaging content for blogs, websites, and social media.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa-brands fa-android"></i>
+                </div>
+                <h3>Android App Development</h3>
+                <p>Creating feature-rich and scalable Android applications to suit your needs.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3>Game Development</h3>
+                <p>Developing engaging games with captivating gameplay and graphics.</p>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <p class="projects-description">Explore my work, showcasing diverse skills and innovative technologies.</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/main1.jpg" alt="Project 1" class="circular-img">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of Project 1, highlighting the main features and technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/my photo.png" alt="Project 2" class="circular-img">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of Project 2, highlighting the main features and technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/project3.jpg" alt="Project 3" class="circular-img">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of Project 3, highlighting the main features and technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="img/project4.jpg" alt="Project 4" class="circular-img">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 4</h3>
+                    <p>A brief description of Project 4, highlighting the main features and technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2>My Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Master of Science in Computer Science</h3>
+                    <span>2024 - 2026</span>
+                    <p>XYZ University</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <span>2020 - 2024</span>
+                    <p>XYZ University</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Diploma in Software Engineering</h3>
+                    <span>2018 - 2020</span>
+                    <p>DEF Technical Institute</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>High School Diploma</h3>
+                    <span>2016 - 2018</span>
+                    <p>ABC High School</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Secondary School Certificate</h3>
+                    <span>2014 - 2016</span>
+                    <p>GHI School</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
 </body>
 </html>
