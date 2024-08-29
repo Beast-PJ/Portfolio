@@ -657,66 +657,81 @@ span{
     }
 }
 .skills {
-    background: #161616; /* Black background */
-    color: white; /* Text color */
-    padding: 4rem 5%; /* Padding for spacing */
-    border-radius: 1rem; /* Rounded corners */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    text-align: center; /* Center text */
+    background: #1a1a1a; /* Darker background for a sleek look */
+    color: white; /* White text for contrast */
+    padding: 4rem 5%;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .skills h2 {
-    font-size: 3rem; /* Title font size */
-    color: #de3532; /* Main color */
-    margin-bottom: 2rem; /* Spacing below title */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    font-size: 3.5rem; /* Larger title */
+    color: #de3532;
+    margin-bottom: 3rem;
+    text-transform: uppercase; /* Uppercase title for emphasis */
+    letter-spacing: 0.5rem; /* Spaced out letters */
 }
 
 .skills p {
-    font-size: 1.5rem; /* Description font size */
-    color: #d1d1d1; /* Light gray for description */
-    margin-bottom: 3rem; /* Spacing below description */
+    font-size: 1.6rem; /* Slightly larger text */
+    color: #cccccc; /* Light gray text */
+    margin-bottom: 3rem;
 }
 
-.skills-container {
-    display: flex; /* Flexbox for layout */
-    flex-wrap: wrap; /* Wrap items to the next line */
-    justify-content: center; /* Center items */
-    gap: 2rem; /* Spacing between skills */
-    max-width: 1000px; /* Max width for container */
-    margin: 0 auto; /* Center alignment */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Gap between cards */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.skill {
-    background: #292929; /* Dark background for skill items */
-    border-radius: 1rem; /* Rounded corners */
-    padding: 2rem; /* Padding for skill items */
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Column layout */
-    align-items: center; /* Center alignment */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    width: 200px; /* Fixed width for uniform size */
-    height: 200px; /* Fixed height for uniform size */
-    transition: transform 0.3s ease, background 0.3s ease; /* Transition for hover effect */
+.skill-card {
+    background: #292929; /* Dark background for cards */
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Deeper shadow */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
 }
 
-.skill:hover {
-    transform: scale(1.1); /* Scale effect on hover */
-    background: #333333; /* Slightly lighter background on hover */
+.skill-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    background: #333333; /* Lighter background on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
 }
 
-.skill i {
-    font-size: 3rem; /* Icon size */
-    color: #de3532; /* Icon color */
-    margin-bottom: 1rem; /* Spacing below icon */
-    transition: transform 0.3s ease; /* Transition for icon rotation */
+.icon-container {
+    font-size: 3.5rem; /* Larger icons */
+    color: #de3532;
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease; /* Rotate icon on hover */
 }
 
-.skill:hover i {
-    transform: rotate(360deg); /* Rotate icon on hover */
+.skill-card:hover .icon-container {
+    transform: rotate(360deg);
 }
 
-.skill span {
-    font-size: 1.5rem; /* Skill name font size */
-    color: #d1d1d1; /* Skill name color */
+.skill-card h3 {
+    font-size: 1.8rem; /* Skill title size */
+    color: #ffffff;
+    margin-top: 1rem;
 }
+
+@media (max-width: 600px) {
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    .icon-container {
+        font-size: 3rem;
+    }
+
+    .skill-card h3 {
+        font-size: 1.5rem;
+    }
+}
+    
