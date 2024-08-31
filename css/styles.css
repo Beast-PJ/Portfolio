@@ -757,3 +757,120 @@ span{
         max-width: 100%;
     }
 }
+
+.resume {
+    padding: 4rem 5%;
+    background: #0b0b0b;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-top: 4rem;
+}
+
+.resume .section-title {
+    font-size: 3rem;
+    color: #de3532;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.resume-description {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.resume-card {
+    background: #161616;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    flex: 1 1 calc(33% - 2rem);
+    max-width: calc(33% - 2rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.resume-card h3 {
+    font-size: 2rem;
+    color: #de3532;
+    margin-bottom: 1rem;
+}
+
+.resume-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-card ul li {
+    margin-bottom: 1.5rem;
+}
+
+.resume-card h4 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.resume-card span {
+    display: block;
+    font-size: 1.2rem;
+    color: #999999;
+    margin-bottom: 0.5rem;
+}
+
+.resume-card p {
+    font-size: 1.4rem;
+    color: #d1d1d1;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #de3532;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.resume-button i {
+    margin-right: 1rem;
+}
+
+.resume-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 768px) {
+    .resume-content {
+        flex-direction: column;
+    }
+
+    .resume-card {
+        max-width: 100%;
+    }
+}
+
