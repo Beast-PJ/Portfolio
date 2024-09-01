@@ -1,16 +1,12 @@
-// Select the toggle button by its ID
 const toggleButton = document.getElementById('mode-toggle');
 
-// Add an event listener to the toggle button for the 'click' event
 toggleButton.addEventListener('click', function() {
-    // Toggle the 'dark-mode' class on the body element
     document.body.classList.toggle('dark-mode');
 
-    // Change the button's text and emoji based on the current mode
     if (document.body.classList.contains('dark-mode')) {
-        toggleButton.textContent = '☀️'; // Sun emoji for light mode
+        toggleButton.textContent = '☀️';
     } else {
-        toggleButton.textContent = '🌙'; // Moon emoji for dark mode
+        toggleButton.textContent = '🌙'; 
     }
 });
 let currentIndex = 0;
@@ -23,8 +19,14 @@ function moveCarousel(direction) {
     items[currentIndex].classList.add('active');
 }
 
-// Optional: Auto-slide functionality
 setInterval(() => {
     moveCarousel(1);
-}, 5000); // Change slide every 5 seconds
+}, 5000); 
+
+const textarea = document.querySelector('textarea');
+
+textarea.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = `${this.scrollHeight}px`;
+});
 
