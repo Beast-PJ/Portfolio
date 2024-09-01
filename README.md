@@ -23,7 +23,7 @@ If you want to run this portfolio website locally or make modifications, here’
 
 2. **Navigate to the project directory:**
    ```bash
-   $ cd PortfolioWebsite
+   $ cd Portfolio
    ```
 
 3. **Open `index.html` in your browser to view the website.**
@@ -38,7 +38,6 @@ If you want to run this portfolio website locally or make modifications, here’
 
 ## Roadmap
 
-- **Dark Mode:** Add a dark mode option for those who prefer a different aesthetic while browsing.
 - **Interactive Resume:** Introduce an interactive resume with hover effects and detailed pop-ups for each section.
 - **Project Filters:** Implement filtering options in the Portfolio Gallery to easily sort projects by category, date, or technology.
 - **Client Portal:** Create a secure client portal where clients can log in to see project updates, deliverables, and feedback.
