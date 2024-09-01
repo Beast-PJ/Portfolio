@@ -758,93 +758,6 @@ span{
     }
 }
 
-.resume {
-    padding: 5rem 5%;
-    background: #161616;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.resume h2 {
-    font-size: 3rem;
-    color: #de3532;
-    margin-bottom: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.resume-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-}
-
-.resume-card {
-    background: #292929;
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 100%;
-    max-width: 400px;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.resume-card:hover {
-    transform: scale(1.05);
-    background: #3a3a3a;
-}
-
-.resume-card h3 {
-    font-size: 2.4rem;
-    color: #de3532;
-    margin-bottom: 1.5rem;
-}
-
-.resume-item {
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
-
-.resume-item h4 {
-    font-size: 1.8rem;
-    color: #fff;
-    margin-bottom: 0.5rem;
-}
-
-.resume-item span {
-    font-size: 1.2rem;
-    color: #d1d1d1;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.resume-item p {
-    font-size: 1.4rem;
-    color: #e0e0e0;
-}
-
-.resume-download {
-    margin-top: 3rem;
-}
-
-.resume-download .btn {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background-color: #de3532;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: 4rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.resume-download .btn:hover {
-    background-color: #ff5a4a;
-    transform: scale(1.1);
-    color: #fff;
-}
 
 .resume {
     padding: 5rem 2%;
@@ -1024,6 +937,229 @@ span{
 
     .resume-item {
         max-width: 100%;
+    }
+}
+
+.contact-me {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-me::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    transform: rotate(-30deg);
+    z-index: -1;
+    animation: rotateBackground 20s linear infinite;
+}
+
+@keyframes rotateBackground {
+    100% {
+        transform: rotate(330deg);
+    }
+}
+
+.contact-me h2 {
+    font-size: 3.5rem;
+    color: #de3532;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contact-me p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    color: #d1d1d1;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-card {
+    background: #1e1e1e;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: calc(25% - 2rem);
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    transform: rotate(-30deg);
+    z-index: -1;
+    animation: rotateCardBackground 20s linear infinite;
+}
+
+@keyframes rotateCardBackground {
+    100% {
+        transform: rotate(330deg);
+    }
+}
+
+.contact-card i {
+    font-size: 3rem;
+    color: #de3532;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.contact-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #de3532;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contact-card p a {
+    color: #de3532;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: #de3532;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.contact-form {
+    margin-top: 4rem;
+    background: #1e1e1e;
+    padding: 3.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 4rem auto 0;
+    text-align: left;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.contact-form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #de3532;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #292929;
+    color: white;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    transform: scale(1.02);
+    outline: none;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #de3532;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #b72b29;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
