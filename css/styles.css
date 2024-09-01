@@ -1012,25 +1012,6 @@ span{
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
 }
 
-.contact-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    transform: rotate(-30deg);
-    z-index: -1;
-    animation: rotateCardBackground 20s linear infinite;
-}
-
-@keyframes rotateCardBackground {
-    100% {
-        transform: rotate(330deg);
-    }
-}
-
 .contact-card i {
     font-size: 3rem;
     color: #de3532;
@@ -1061,6 +1042,10 @@ span{
     text-decoration: none;
     transition: color 0.3s ease;
     animation: fadeInUp 1s ease-in-out;
+}
+
+.social-links {
+    margin-top: 3rem;
 }
 
 .social-links a {
@@ -1094,7 +1079,8 @@ span{
     animation: fadeInDown 1s ease-in-out;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 1.2rem;
     margin-bottom: 2rem;
@@ -1107,7 +1093,8 @@ span{
     transition: transform 0.3s ease;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     transform: scale(1.02);
     outline: none;
 }
@@ -1160,6 +1147,30 @@ span{
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        width: 100%;
+    }
+
+    .contact-me h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-me p {
+        font-size: 1.4rem;
+    }
+
+    .contact-form h3 {
+        font-size: 2rem;
     }
 }
 
