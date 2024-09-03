@@ -75,6 +75,29 @@
     font-size: 2rem;
     color: #de3532;
 }
+.overview-section {
+    padding: 4rem 5%;
+    background: #161616;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.overview-section h2 {
+    font-size: 3rem;
+    color: #de3532;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.overview-section p {
+    font-size: 1.6rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
 
 .overview-details ul li strong {
     color: #de3532;
@@ -104,6 +127,36 @@
         gap: 2rem;
     }
 }
+/* General Section Styles */
+section {
+    padding: 4rem 5%;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #de3532;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 4px;
+    background: #de3532;
+    margin: 1rem auto 0;
+    border-radius: 10px;
+}
+
+/* Features Section */
 /* General Section Styles */
 section {
     padding: 4rem 5%;
