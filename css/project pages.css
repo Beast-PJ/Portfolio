@@ -352,3 +352,57 @@ section h2 {
         width: 100%;
     }
 }
+.challenges-solutions {
+    background-color: #161616;
+    color: #ffffff;
+    padding: 4rem 5%;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.challenges-solutions h2 {
+    font-size: 3rem;
+    color: #de3532;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.challenge-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.challenge, .solution {
+    width: 48%;
+    background-color: #292929;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.challenge:hover, .solution:hover {
+    transform: scale(1.05);
+}
+
+.challenge h3, .solution h3 {
+    font-size: 2rem;
+    color: #de3532;
+    margin-bottom: 1.5rem;
+}
+
+.challenge p, .solution p {
+    font-size: 1.6rem;
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .challenge, .solution {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
