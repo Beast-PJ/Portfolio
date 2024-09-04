@@ -143,36 +143,6 @@ section h2 {
     color: #de3532;
     margin-bottom: 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-section h2::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 4px;
-    background: #de3532;
-    margin: 1rem auto 0;
-    border-radius: 10px;
-}
-
-/* Features Section */
-/* General Section Styles */
-section {
-    padding: 4rem 5%;
-    background: black;
-    color: white;
-    text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    margin-bottom: 3rem;
-}
-
-section h2 {
-    font-size: 3rem;
-    color: #de3532;
-    margin-bottom: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Features Section */
@@ -184,11 +154,11 @@ section h2 {
 }
 
 .feature-item {
-    background: #1c1c1c;
+    background: #1e1e1e;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: calc(33.333% - 4rem);
     text-align: left;
 }
@@ -197,6 +167,7 @@ section h2 {
     font-size: 2.5rem;
     color: #de3532;
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
 }
 
 .feature-item h3 {
@@ -211,8 +182,12 @@ section h2 {
 }
 
 .feature-item:hover {
-    transform: scale(1.05);
-    background: #292929;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.feature-item:hover i {
+    color: #e74c3c;
 }
 
 /* Technologies Section */
@@ -224,11 +199,11 @@ section h2 {
 }
 
 .tech-item {
-    background: #1c1c1c;
+    background: #1e1e1e;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: calc(33.333% - 4rem);
     text-align: center;
 }
@@ -237,6 +212,7 @@ section h2 {
     font-size: 3rem;
     color: #de3532;
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
 }
 
 .tech-item h3 {
@@ -245,8 +221,12 @@ section h2 {
 }
 
 .tech-item:hover {
-    transform: scale(1.05);
-    background: #292929;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.tech-item:hover i {
+    color: #e74c3c;
 }
 
 /* Responsive Adjustments */
@@ -259,5 +239,61 @@ section h2 {
 @media (max-width: 480px) {
     .feature-item, .tech-item {
         width: 100%;
+    }
+}
+/* General Section Styles */
+.gallery-section {
+    padding: 4rem 5%;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+.gallery-section h2 {
+    font-size: 3rem;
+    color: #de3532;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 }
