@@ -1,29 +1,42 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'path_to_phpmailer/PHPMailer/src/Exception.php';
+require 'path_to_phpmailer/PHPMailer/src/PHPMailer.php';
+require 'path_to_phpmailer/PHPMailer/src/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Set up email parameters
-    $to = 'your-email@gmail.com'; // Your Gmail address
-    $subject = 'New Message from Contact Form';
-    $message_body = "Name: $name\n\nEmail: $email\n\nMessage:\n$message";
+    // Create a new PHPMailer instance
+    $mail = new PHPMailer(true);
 
-    // Headers
-    $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    try {
+        // Server settings
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com'; // Use Gmail's SMTP server
+        $mail->SMTPAuth = true;
+        $mail->Username = 'your-email@gmail.com'; // Your Gmail address
+        $mail->Password = 'your-password'; // Your Gmail password or App-specific password
+        $mail->SMTPSecure = 'tls'; // Enable TLS encryption
+        $mail->Port = 587;
 
-    // Send email
-    if (mail($to, $subject, $message_body, $headers)) {
-        http_response_code(200);
-        echo json_encode(array('message' => 'Message sent successfully!'));
-    } else {
-        http_response_code(500);
-        echo json_encode(array('message' => 'Failed to send message.'));
+        // Recipients
+        $mail->setFrom($email, $name);
+        $mail->addAddress('your-email@gmail.com'); // Send to your Gmail
+
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = 'New Contact Form Submission';
+        $mail->Body    = "Name: $name<br>Email: $email<br>Message: $message";
+
+        $mail->send();
+        echo 'Message has been sent successfully';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-} else {
-    http_response_code(403);
-    echo json_encode(array('message' => 'Method not allowed.'));
 }
 ?>
