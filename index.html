@@ -1,423 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Portfolio | Prathamesh</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Prathamesh Jadhav</a>
-
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="img/main1.jpg" alt="">
+   <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Prathamesh</p>
+            <span>.</span>
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Prathamesh Jadhav</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I'm a dedicated developer focused on creating innovative, user-friendly solutions. With a blend of technical skills and design expertise, I turn complex challenges into seamless digital experiences. From building high-performance websites to mobile apps, I’m passionate about using technology to bring ideas to life and drive success.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#" class="btn">Hire me</a>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2>My Services</h2>
-        <p class="services-description">Offering a variety of services to help bring your ideas to life.</p>
-        <div class="services-container">
-            <div class="service">
-                <div class="service-icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <h3>Web Development</h3>
-                <p>Building responsive and interactive websites tailored to your needs.</p>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <i class="fa-solid fa-paintbrush"></i>
-                </div>
-                <h3>UI/UX Design</h3>
-                <p>Creating user-friendly interfaces and experiences for your applications.</p>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <i class="fa-solid fa-video"></i>
-                </div>
-                <h3>Video Editing</h3>
-                <p>Producing high-quality video content for marketing and personal projects.</p>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <i class="fa-solid fa-pen"></i>
-                </div>
-                <h3>Content Writing</h3>
-                <p>Crafting compelling and engaging content for blogs, websites, and social media.</p>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <i class="fa-brands fa-android"></i>
-                </div>
-                <h3>Android App Development</h3>
-                <p>Creating feature-rich and scalable Android applications to suit your needs.</p>
-            </div>
-            <div class="service">
-                <div class="service-icon">
-                    <i class="fa-solid fa-gamepad"></i>
-                </div>
-                <h3>Game Development</h3>
-                <p>Developing engaging games with captivating gameplay and graphics.</p>
-            </div>
+        <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
         </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <p class="projects-description">Explore my work, showcasing diverse skills and innovative technologies.</p>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/main1.jpg" alt="Project 1" class="circular-img">
-                </div>
-                <div class="project-info">
-                    <h3>Code Builder</h3>
-                    <p>A brief description of Project 1, highlighting the main features and technologies used.</p>
-                    <a href="Project Pages/Code Builder.html" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/my photo.png" alt="Project 2" class="circular-img">
-                </div>
-                <div class="project-info">
-                    <h3>Eye of Blind</h3>
-                    <p>A brief description of Project 2, highlighting the main features and technologies used.</p>
-                    <a href="Project Pages/Eye of Blind.html" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/project3.jpg" alt="Project 3" class="circular-img">
-                </div>
-                <div class="project-info">
-                    <h3>Echo Play App</h3>
-                    <p>A brief description of Project 3, highlighting the main features and technologies used.</p>
-                    <a href="Project Pages/EchoPlay.html" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/project4.jpg" alt="SVR Application" class="circular-img">
-                </div>
-                <div class="project-info">
-                    <h3>Project Title 4</h3>
-                    <p>A brief description of Project 4, highlighting the main features and technologies used.</p>
-                    <a href="Project Pages/SVR.html" class="btn">View Project</a>
-                </div>
-            </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
-    </section>
+      </nav>
 
-    <section class="education" id="education">
-        <h2>My Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Diploma in Computer Science</h3>
-                    <span>2021 - 2024</span>
-                    <p>Dr. D. Y. Patil Polytechnique, Kasaba Bawada Kolhapur</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Bachelor of Technology in Computer Science</h3>
-                    <span>2024</span>
-                    <p>Shivaji University</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Diploma in Software Engineering</h3>
-                    <span>2018 - 2020</span>
-                    <p>DEF Technical Institute</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>High School Diploma</h3>
-                    <span>2016 - 2018</span>
-                    <p>ABC High School</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Secondary School Certificate</h3>
-                    <span>2014 - 2016</span>
-                    <p>GHI School</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    
-    <section class="skills" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <div class="skills-category">
-                <h3>Web Development</h3>
-                <div class="skills-cards">
-                    <div class="skill-card">
-                        <i class="fab fa-html5"></i>
-                        <h4>HTML</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt"></i>
-                        <h4>CSS</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-js-square"></i>
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <h4>React</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Backend Development</h3>
-                <div class="skills-cards">
-                    <div class="skill-card">
-                        <i class="fab fa-node-js"></i>
-                        <h4>Node.js</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database"></i>
-                        <h4>MongoDB</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-php"></i>
-                        <h4>PHP</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-laravel"></i>
-                        <h4>Laravel</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Mobile App Development</h3>
-                <div class="skills-cards">
-                    <div class="skill-card">
-                        <i class="fab fa-android"></i>
-                        <h4>Android</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-apple"></i>
-                        <h4>iOS</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-flutter"></i>
-                        <h4>Flutter</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <h4>React Native</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Game Development</h3>
-                <div class="skills-cards">
-                    <div class="skill-card">
-                        <i class="fab fa-unity"></i>
-                        <h4>Unity</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-unreal-engine"></i>
-                        <h4>Unreal Engine</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-gamepad"></i>
-                        <h4>C#</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-python"></i>
-                        <h4>Python</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Resume/CV</h2>
-            <p class="section-subtitle">Easily access my up-to-date resume or CV, showcasing my professional journey, education, and accomplishments.</p>
-    
-            <div class="resume-content">
-                <div class="resume-item">
-                    <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
-                    <h3>Work Experience</h3>
-                    <ul>
-                        <li><strong>Software Engineer</strong> at XYZ Company <span>(2020 - Present)</span></li>
-                        <li><strong>Web Developer</strong> at ABC Inc. <span>(2018 - 2020)</span></li>
-                    </ul>
-                </div>
-    
-                <div class="resume-item">
-                    <div class="icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Education</h3>
-                    <ul>
-                        <li><strong>Bachelor of Technology</strong> in Computer Science <span>(2014 - 2018)</span></li>
-                        <li><strong>High School Diploma</strong> <span>(2012 - 2014)</span></li>
-                    </ul>
-                </div>
-    
-                <div class="resume-item">
-                    <div class="icon-wrapper"><i class="fas fa-award"></i></div>
-                    <h3>Achievements</h3>
-                    <ul>
-                        <li>Best Employee of the Year <span>(2022)</span></li>
-                        <li>Certified Web Developer <span>(2021)</span></li>
-                    </ul>
-                </div>
-            </div>
+    <main class="wrapper">
 
-            <a href="your_resume_link_here.pdf" class="resume-button btn" target="_blank">
-                <i class="fas fa-file-download"></i> Download Full Resume/CV
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Prathamesh </span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>I'm a dedicated developer focused on creating innovative, user-friendly solutions. From building high-performance websites to mobile apps, I’m passionate about using technology to bring ideas to life and drive success.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
             </a>
+          </div>
 
-        </div>
-    </section>
-
-
-    <section class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <i class="fas fa-quote-left"></i>
-                <p>"Working with Prathamesh Jadhav has been an absolute pleasure. His attention to detail and dedication to his craft are unparalleled. Highly recommend!"</p>
-                <div class="client-info">
-                    John Doe
-                    <span>CEO, Company XYZ</span>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                       frameworks and libraries,which allows me to implement interactive features.
+                       Additionally, I have experirence working with content management systems (CMS) like
+                       WordPress.
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <i class="fas fa-quote-left"></i>
-                <p>"Prathamesh Jadhav's creativity and problem-solving skills have been a huge asset to our project. His professionalism is top-notch."</p>
-                <div class="client-info">
-                    Jane Smith
-                    <span>Project Manager, ABC Corp</span>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <i class="fas fa-quote-left"></i>
-                <p>"I have worked with many developers, but Prathamesh Jadhav stands out for his passion and commitment. He delivers high-quality work every time."</p>
-                <div class="client-info">
-                    Sarah Johnson
-                    <span>Lead Developer, Tech Solutions</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+          </div>
+       </section>
 
-    <section class="contact-me">
-        <h2>Contact Me</h2>
-        <p>Ready to connect? Find all the ways to get in touch, whether it’s through email, social media, or a contact form. Let’s start a conversation!</p>
-        
-        <div class="contact-methods">
-            <div class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>13+ Finished Projects</label>
             </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-phone-alt"></i>
-                <h3>Phone</h3>
-                <p><a href="tel:+1234567890">+1234567890</a></p>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>3+ Happy Clients</label>
             </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-comments"></i>
-                <h3>Social Media</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>1 Years in the field</label>
+            </div>
+          </div>
+       </section>
+
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: Prathameshjadhav61657@gmail.com</p>
                 </div>
-            </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-comment-dots"></i>
-                <h3>Contact Form</h3>
-                <p><a href="#contact-form">Fill out the form below</a></p>
-            </div>
-        </div>
-        
-        <form id="contact-form" class="contact-form">
-            <h3>Send a Message</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        
-    </section>
-    
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="#" class="logo">Prathamesh Jadhav</a>
-            </div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-socials">
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="footer-copy">
-                <p>&copy; 2024 Prathamesh Jadhav. All rights reserved.</p>
-            </div>
+        <div class="top-footer">
+            <p>Prathamesh Jadhav</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Prathamesh Jadhav</a> - All rights reserved</p>
         </div>
     </footer>
-    
-    
-    <script src="js/script.js"></script>
-    
-    
+
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

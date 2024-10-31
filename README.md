@@ -64,12 +64,6 @@ Want to run the portfolio locally or make some custom tweaks? Here’s how:
 
 ---
 
-## 📜 **License**
-
-This project is licensed under the **MIT License**. Check out the [LICENSE](LICENSE) file for full details.
-
----
-
 ## 📬 **Let’s Connect!**
 
 Got questions, ideas, or just want to say hi? **I’m always open** to new opportunities, exciting projects, and collaborations! Drop me a message at:
