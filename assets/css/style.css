@@ -636,3 +636,26 @@ footer{
         width: 100%;
     }
 }
+
+.icon-link {
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer; 
+}
+
+.icon-link .icon {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-link .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
