@@ -16,10 +16,6 @@ This is your one-stop destination to explore **who I am**, **what I do**, and ho
 
 - **💌 Contact Me**: Ready to collaborate? Feel free to reach out through **email**, **social media**, or the **contact form**. Let’s turn ideas into action!
 
-- **🗣️ Testimonials**: Don’t just take my word for it! Hear what my **clients**, **colleagues**, and **mentors** have to say about my work ethic, collaboration, and results.
-
-- **🖼️ Portfolio Gallery**: **Browse** my work visually with a gallery that showcases **high-quality images**, **project descriptions**, and **links** to live demos or repositories. Creativity meets functionality!
-
 ---
 
 ## 🛠️ **Setting Up the Portfolio Locally**
@@ -55,8 +51,6 @@ Want to run the portfolio locally or make some custom tweaks? Here’s how:
 - **🎯 Interactive Resume**: Make the resume section pop with hover effects and interactive details to bring my journey to life.
   
 - **🎨 Project Filters**: Implement smart filters in the **Portfolio Gallery**—sort by project type, technology, or date, making it easier to find relevant work.
-
-- **🔐 Client Portal**: Add a secure login for clients to view project updates, deliverables, and provide feedback directly on the site.
 
 - **✨ Smooth Animations**: Enhance the user experience with smooth animations and transitions to give the site an engaging, modern feel.
 
