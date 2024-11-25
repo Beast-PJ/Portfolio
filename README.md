@@ -12,7 +12,7 @@ This is your one-stop destination to explore **who I am**, **what I do**, and ho
 
 - **🛠️ Skills & Expertise**: From programming languages to design software, discover the **diverse skills** I bring to the table. Let’s explore how my technical abilities can help turn your ideas into reality.
 
-- **📄 Resume/CV**: Get a **snapshot** of my professional journey. Download my updated resume, complete with **education**, **experience**, and **achievements**. See how I can bring value to your team!
+- **📄 Resume**: Get a **snapshot** of my professional journey. Download my updated resume, complete with **education**, **experience**, and **achievements**. See how I can bring value to your team!
 
 - **💌 Contact Me**: Ready to collaborate? Feel free to reach out through **email**, **social media**, or the **contact form**. Let’s turn ideas into action!
 
@@ -24,7 +24,7 @@ Want to run the portfolio locally or make some custom tweaks? Here’s how:
 
 1. **Clone the Repository**:
    ```bash
-   $ git clone https://github.com/beast-pj/Portfolio.git
+   $ git clone https://github.com/beast-pj/portfolio.git
    ```
 
 2. **Navigate to the Directory**:
