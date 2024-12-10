@@ -7,6 +7,10 @@ function myMenuFunction(){
     menuBtn.className = "nav-menu";
   }
 }
+ const completedProjectButton = document.getElementById('completedProjectButton');
+    completedProjectButton.addEventListener('click', () => {
+      window.location.href = 'completed-projects.html';
+    });
 
 window.onscroll = function() {headerShadow()};
 
